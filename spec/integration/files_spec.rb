@@ -15,7 +15,8 @@ describe "files" do
       parser.convert
 
       tempfile.rewind
-      tempfile.read.should eql(html_file.read)
+      html_content = html_file.read.gsub("[TITLE_HERE]", odt_path)
+      tempfile.read.should eql(html_content)
     ensure
       tempfile.close!
     end
