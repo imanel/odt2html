@@ -189,8 +189,6 @@ module ODT2HTML
       str = <<HDR
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<!-- Produced by ODF to XHTML converter, #{Time.now} -->
-
 <html>
 </html>
 HDR
@@ -224,7 +222,7 @@ HDR
         output_file = $stdout
       end
 
-      @output_doc.write( output_file, 4 )
+      @output_doc.write( output_file, 2 )
       output_file.close
 
       rescue Exception => e
