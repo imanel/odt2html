@@ -1,4 +1,5 @@
 #!/usr/local/bin/ruby
+require 'rubygems'
 require 'rexml/document'
 require 'zip/zip'
 require 'stringio'
