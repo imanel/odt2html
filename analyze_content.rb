@@ -156,6 +156,10 @@ class ODT_to_XHTML
     process_children( element, link )
   end
 
+  def process_text_line_break( element, output_node )
+    br = emit_element( output_node, "br" )
+  end
+
   def process_text_bookmark( element, output_node )
     process_text_bookmark_start( element, output_node )
   end
