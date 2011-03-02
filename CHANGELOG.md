@@ -3,7 +3,11 @@
 ## 2011-03-02
 - Forked to Github
 - Added code to handle <text:line_break>
+- Changed behaviour of <p> and <br> generation
 - Updated files to follow Github convention
+- Renamed to ODT2HTML
+- Refactored to modular structure
+- Added tests
 
 ## 2007-01-18
 - Made --out parameter optional; if you don't give the parameter, output goes to STDOUT; this lets you use the program as a filter
