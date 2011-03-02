@@ -1,0 +1,1 @@
+require 'odt2html/odt_to_xhtml'

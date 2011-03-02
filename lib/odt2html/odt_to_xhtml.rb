@@ -4,10 +4,10 @@ require 'rexml/document'
 require 'zip/zip'
 require 'stringio'
 require 'getoptlong'
-require 'analyze_styles'
-require 'analyze_content'
-require 'analyze_graphics'
-require 'style_classes'
+require 'odt2html/analyze_styles'
+require 'odt2html/analyze_content'
+require 'odt2html/analyze_graphics'
+require 'odt2html/style_classes'
 
 class ODT_to_XHTML
 
@@ -252,7 +252,3 @@ class REXML::Element
   return (attr != nil) ? attr.value : nil
   end
 end
-
-app = ODT_to_XHTML.new
-app.convert
-

@@ -1,6 +1,6 @@
 require 'rexml/document'
 require 'rexml/xpath'
-require 'style_classes'
+require 'odt2html/style_classes'
 
 class ODT_to_XHTML
 
