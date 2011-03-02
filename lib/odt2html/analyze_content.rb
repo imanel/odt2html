@@ -85,7 +85,7 @@ module ODT2HTML
             "border-bottom", "none")
         end
       end
-      para  = emit_element( output_node, "div", attr_hash )
+      para  = emit_element( output_node, "p", attr_hash )
       @previous_para_style = style_name
       @previous_para = para
       if (element.has_elements? || element.has_text?) then
