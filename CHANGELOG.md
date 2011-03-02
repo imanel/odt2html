@@ -1,6 +1,6 @@
 # Changelog
 
-## 2011-03-02
+## 0.1.0 / 2011-03-02
 - Forked to Github
 - Added code to handle <text:line_break>
 - Changed behaviour of <p> and <br> generation
