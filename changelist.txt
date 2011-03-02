@@ -1,0 +1,18 @@
+18 Jan 2007
+-----------
+* Made --out parameter optional; if you don't give the parameter,
+  output goes to STDOUT; this lets you use the program as a filter
+
+15 Jan 2006
+-----------
+* Add code to handle <text:a> and <text:bookmark-start>
+
+02 Jan 2006
+-----------
+* Added LGPL to all the source files
+* If an ODT document refers to a non-existent graphic, don't crash.
+
+01 Jan 2006
+-----------
+* First alpha release version
+
