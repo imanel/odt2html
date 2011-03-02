@@ -1,6 +1,3 @@
-require 'rexml/document'
-require 'rexml/xpath'
-
 module ODT2HTML
   module AnalyzeStyles
 
