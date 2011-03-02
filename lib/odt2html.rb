@@ -7,7 +7,7 @@ require 'getoptlong'
 module ODT2HTML
 
   VERSION = "0.1.0"
-  ROOT_PATH = ::File.expand_path(::File.dirname(__FILE__))
+  ROOT_PATH = File.expand_path(File.dirname(__FILE__))
 
   autoload :Base,             "#{ROOT_PATH}/odt2html/base"
   autoload :AnalyzeContent,   "#{ROOT_PATH}/odt2html/analyze_content"
