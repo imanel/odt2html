@@ -64,7 +64,8 @@ module ODT2HTML
     end
 
     #
-    # Paragraphs are processed as <tt>&lt;div&gt;</tt> elements.
+    # Paragraphs are processed as <tt>&lt;p&gt;</tt> elements.
+    # / This is no longer valid
     # A <tt>&lt;text:p&gt;</tt> with no children will generate
     # a <tt>&lt;br /&gt;</tt>.
     def process_text_p( element, output_node )
@@ -90,8 +91,8 @@ module ODT2HTML
       @previous_para = para
       if (element.has_elements? || element.has_text?) then
         process_children( element, para )
-      else
-        para.add_element("br")
+      # else
+      #   para.add_element("br")
       end
     end
 
