@@ -1,6 +1,6 @@
 # Changelog
 
-## Edge
+## 0.1.1 / 2011-03-03
 - Allow to put output into variable instead of forcing it to write to stdout
 
 ## 0.1.0 / 2011-03-02
