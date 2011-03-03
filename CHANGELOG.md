@@ -1,5 +1,8 @@
 # Changelog
 
+## Edge
+- Allow to put output into variable instead of forcing it to write to stdout
+
 ## 0.1.0 / 2011-03-02
 - Forked to Github
 - Added code to handle <text:line_break>
