@@ -230,7 +230,9 @@ HDR
       else
         return output_file
       end
-
+    rescue ArgumentError => e
+      puts e.message
+      exit
     rescue Exception => e
       puts "Cannot convert file: #{e}"
       puts e.backtrace.join("\n")
