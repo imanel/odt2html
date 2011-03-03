@@ -6,4 +6,6 @@ require 'rubygems'
 require 'odt2html'
 
 app = ODT2HTML::Base.new
-app.convert
+output = app.convert
+
+puts output unless output.nil?

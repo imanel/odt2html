@@ -219,15 +219,21 @@ HDR
       if (@output_filename) then
         output_file = File.open( @output_filename, "w")
       else
-        output_file = $stdout
+        output_file = String.new
       end
 
       @output_doc.write( output_file, 2 )
-      output_file.close
 
-      rescue Exception => e
-        puts "Cannot convert file: #{e}"
-        puts e.backtrace.join("\n")
+      if @output_filename
+        output_file.close
+        return nil
+      else
+        return output_file
+      end
+
+    rescue Exception => e
+      puts "Cannot convert file: #{e}"
+      puts e.backtrace.join("\n")
     end
 
     def usage
