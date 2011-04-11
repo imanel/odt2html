@@ -1,5 +1,9 @@
 # Changelog
 
+## Edge
+
+- Extracted version to external file - this was causing some problems with bundler
+
 ## 0.1.1 / 2011-03-03
 - Allow to put output into variable instead of forcing it to write to stdout
 

@@ -5,8 +5,6 @@ require 'stringio'
 require 'getoptlong'
 
 module ODT2HTML
-
-  VERSION = "0.1.1"
   ROOT_PATH = File.expand_path(File.dirname(__FILE__))
 
   autoload :Base,             "#{ROOT_PATH}/odt2html/base"
