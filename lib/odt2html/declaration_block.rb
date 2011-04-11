@@ -24,7 +24,7 @@ module ODT2HTML
 
     def to_s
       result = "{\n"
-      each { |item|
+      sort{|a,b| a.property <=> b.property }.each { |item|
         result << "\t#{item.property}: #{item.value};\n"
       }
       result << "}\n"
