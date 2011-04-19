@@ -152,7 +152,7 @@ module ODT2HTML
 
     def add_xhtml_head_info
       @head.add_element("meta",
-        "content"=>"text/html; charset=utf-8", "http-equiv"=>"content-type")
+        "http-equiv"=>"content-type", "content"=>"text/html; charset=utf-8")
       @head.add_element("title").add_text( @input_filename )
     end
 

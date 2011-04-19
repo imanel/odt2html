@@ -10,6 +10,6 @@ describe "files" do
     parser.instance_variable_set('@input_filename', odt_path)
 
     html_content = html_file.read.gsub("[TITLE_HERE]", odt_path)
-    parser.convert.should eql(html_content)
+    parser.convert.should equal_xml(html_content)
   end
 end
