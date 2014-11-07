@@ -1,6 +1,6 @@
 require 'rexml/document'
 require 'rexml/xpath'
-require 'zip/zip'
+require 'zip'
 require 'stringio'
 require 'getoptlong'
 
