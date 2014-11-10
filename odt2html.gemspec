@@ -10,11 +10,12 @@ Gem::Specification.new do |s|
   s.email       = ["bernard.potocki@imanel.org"]
   s.homepage    = "http://github.com/imanel/odt2html"
   s.summary     = %q{OpenDocument text to HTML converter}
-  s.description = %q{OpenDocument text to HTML converter}
+  s.description = %q{OpenDocument text (.odt) to HTML converter}
+  s.license     = "LGPLv2.1"
 
-  s.add_dependency 'rubyzip', '~> 1.1.6'
-  s.add_development_dependency 'rspec', '~> 2.4.0'
-  s.add_development_dependency 'test_xml'
+  s.add_dependency 'rubyzip', '~> 1.1'
+  s.add_development_dependency 'rspec', '~> 2.4'
+  s.add_development_dependency 'test_xml', '~> 0'
 
   s.files         = `git ls-files`.split("\n")
   s.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
