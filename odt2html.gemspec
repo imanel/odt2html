@@ -12,7 +12,7 @@ Gem::Specification.new do |s|
   s.summary     = %q{OpenDocument text to HTML converter}
   s.description = %q{OpenDocument text to HTML converter}
 
-  s.add_dependency 'rubyzip'
+  s.add_dependency 'rubyzip', '~> 1.1.6'
   s.add_development_dependency 'rspec', '~> 2.4.0'
   s.add_development_dependency 'test_xml'
 
