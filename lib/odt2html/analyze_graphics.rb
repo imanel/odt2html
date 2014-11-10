@@ -48,7 +48,7 @@ module ODT2HTML
     end
 
     def copy_image_file( pic_name, directory, filename )
-      zipfile = Zip::ZipFile::open( @input_filename )
+      zipfile = Zip::File::open( @input_filename )
       inStream = zipfile.get_entry( pic_name )
       if (inStream != nil) then
         inStream = inStream.get_input_stream

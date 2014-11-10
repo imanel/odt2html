@@ -143,7 +143,7 @@ module ODT2HTML
     end
 
     def get_xml( member_name )
-      zipfile = Zip::ZipFile::open( @input_filename )
+      zipfile = Zip::File::open( @input_filename )
       stream = zipfile.get_entry( member_name ).get_input_stream
       doc = REXML::Document.new stream.read
       zipfile.close
