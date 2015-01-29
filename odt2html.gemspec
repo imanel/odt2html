@@ -14,8 +14,6 @@ Gem::Specification.new do |s|
   s.license     = "LGPLv2.1"
 
   s.add_dependency 'rubyzip', '~> 1.1'
-  s.add_development_dependency 'rspec', '~> 2.4'
-  s.add_development_dependency 'test_xml', '~> 0'
 
   s.files         = `git ls-files`.split("\n")
   s.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
