@@ -1,10 +1,11 @@
 # Changelog
 
-## Edge
+## 0.2.0 / 2015-01-29
 
 - Extracted version to external file - this was causing some problems with bundler
 - Sort styles before output - slower, but more consistent across platforms
 - Consistency fix for metatag in Ruby 1.9.2
+- Support Rubyzip new interface
 
 ## 0.1.1 / 2011-03-03
 - Allow to put output into variable instead of forcing it to write to stdout
